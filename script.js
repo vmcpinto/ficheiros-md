@@ -20,8 +20,14 @@ fetch("artigos.json")
 function carregarArtigo() {
   const file = location.hash.substring(1);
   fetch("artigos/" + file)
-    .then(res => res.text())
+    .then(res => {
+      if (!res.ok) throw new Error("Ficheiro não encontrado");
+      return res.text();
+    })
     .then(md => {
       document.getElementById("content").innerHTML = marked.parse(md);
+    })
+    .catch(err => {
+      document.getElementById("content").innerHTML = `<p style="color: red;">Erro: ${err.message}</p>`;
     });
 }
