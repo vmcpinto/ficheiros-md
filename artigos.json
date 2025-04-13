@@ -1,5 +1,14 @@
 [
-  { "file": "artigo1.md", "title": "O que é Apologética?" },
-  { "file": "artigo2.md", "title": "Evidências do Novo Testamento" },
-  { "file": "artigo3.md", "title": "Profecias no Antigo Testamento" }
+  {
+    "file": "artigo1.md",
+    "title": "O que é Apologética?"
+  },
+  {
+    "file": "artigo2.md",
+    "title": "Evidências do Novo Testamento"
+  },
+  {
+    "file": "artigo3.md",
+    "title": "Profecias no Antigo Testamento"
+  }
 ]
